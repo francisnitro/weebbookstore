@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Weebookstore - Your manga bookstore at home</title>
+    <link rel="icon" href="./images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+</head>
+<body> 
+<section class="header">
+    <nav>  
+        <a href="index.html"><img src="./images/Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+        <i class='bx bx-exit' style='color:#ffffff' onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./webpages/bestseller.html">Best Seller</a></li>
+                <li><a href="./webpages/bestseller.html">Books</a></li>
+                <li><a href="./webpages/aboutus.html">About Us</a></li>
+                <li><a href="./webpages/loginform.html">Login</a></li>
+            </ul>
+        </div>
+        <i class='bx bx-menu'onclick="showMenu()"></i>
+    </nav>
+<div class="text-box">
+    <h1>Weebookstore</h1>
+    <p>An independent manga and light novel-centric online bookstore in the Philippines.<br>Authentic from Japan and South Korea straight to your homes.</p>
+    <a href="./webpages/aboutus.html" class="hero-btn">Visit us to know more!</a>
+</div>
+</section>
+<br>
+<br>
+<!---Manga, Manhwa, and Light Novels--->
+<section class="imahe">
+    <h1>Types of books that you might like...</h1>
+    
+    <div class="row">
+        <div class="imahe-col">
+            <img src="images/manga.jpg">
+            <div class="layer">
+                <h3><b>MANGA</b></h3>
+            </div>
+        </div>
+        <div class="imahe-col">
+            <img src="images/manhwa.jpg">
+            <div class="layer">
+                <h3><b>MANHWA</b></h3>
+            </div>
+        </div>
+        <div class="imahe-col">
+            <img src="images/lightnovel.jpg">
+            <div class="layer">
+                <h3><b>LIGHTNOVELS</b></h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!---Footer--->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> Follow our Social Media for more updates!</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61553926171182" class='bx bxl-facebook'></a>
+            <a href="https://twitter.com/weebookstoreph" class='bx bxl-twitter'></a>
+            <a href="https://www.instagram.com/weebookstore.ph/"i class='bx bxl-instagram'></a>
+        </div>
+        <br>
+        <br>
+        <p> Made by Francisco N. Ortiz BSIT 103 <br> <i class='bx bx-wink-smile'></i> for Introduction to Computing Finals Project <i class='bx bx-wink-smile'></i></p>
+    </section>
+
+
+<!---JavaScript for Toggle Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

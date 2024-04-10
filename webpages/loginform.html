@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Login or Register -  Weebookstore</title>
+    <link rel="icon" href="images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styleform.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <ul>
+                <li><a href="../index.html"><i class='bx bx-arrow-back'></i><b>Back</b></a></li>
+            <div class ="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="../images/fb.png">
+                <img src="../images/x.png">
+                <img src="../images/gmail.png">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Username/Email" required>
+                <i class='bx bx-user'></i>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"> <Span>Remember Password</Span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Username" required>
+                <input type="text" class="input-field" placeholder="Enter Email" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"> <Span>I agree to terms & conditions</Span>
+                <button type="submit" class="submit-btn">Register</button>
+            </ul>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        var x =document.getElementById("login");
+        var y =document.getElementById("register");
+        var z =document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px"
+            y.style.left = "50px"
+            z.style.left = "110px"
+        }
+        function login(){
+            x.style.left = "50px"
+            y.style.left = "450px"
+            z.style.left = "0px"
+        }
+    </script>
+
+
+</body>
+
+</html>
